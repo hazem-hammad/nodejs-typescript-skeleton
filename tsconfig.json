@@ -1,0 +1,29 @@
+{
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  },
+  "extends": "@tsconfig/node16/tsconfig.json",
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "baseUrl": "./",
+    "paths": {
+      "app/*": ["src/app/*"],
+      "core/*": ["src/core/*"],
+      "config/*": ["src/config/*"]
+    },
+    "noEmit": true
+  },
+  "exclude": ["node_modules", "dist"]
+}
